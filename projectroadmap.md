@@ -15,3 +15,12 @@ I explored a Python recommendation system project on GitHub. The project used li
 - Start building the MoodSync program
 - Create a list of songs by mood
 - Add user input and validation
+
+## Sprint 2
+
+- [x] Built mood input function
+- [x] Created recommendation system
+- [x] Added loop for repeated use
+- [x] Improved input validation
+- [x] Added new mood categories
+- [x] Improved output formatting
