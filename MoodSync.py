@@ -19,11 +19,11 @@ def recommend_song(mood):
     }
 
     if mood in songs:
-        print("\n--- Recommended Songs ---")
-        for song in songs[mood]:
-            print("-", song)
+       print("\n🎵 --- Recommended Songs --- 🎵")
+       for song in songs[mood]:
+        print("-", song)
     else:
-        print("\nNo recommendations for that mood yet.")
+     print("\nNo recommendations for that mood yet.")
     
 
     
