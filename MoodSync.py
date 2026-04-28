@@ -16,7 +16,8 @@ def recommend_song(mood):
         "stressed": ["Weightless - Ambient", "Lo-fi Beats"],
         "tired": ["Chill Vibes", "Soft Piano"],
         "energetic": ["Stronger - Kanye West", "POWER - Kanye West"],
-        "chill": ["Location - Khalid", "Pink + White - Frank Ocean"]
+        "chill": ["Location - Khalid", "Pink + White - Frank Ocean"],
+        "angry": ["DNA - Kendrick Lamar", "Lose Yourself - Eminem"]
     }
 
     if mood in songs:
