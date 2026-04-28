@@ -1,3 +1,4 @@
+# Gets user mood input and makes sure it's valid
 def get_mood():
     while True:
         mood = input("Enter your mood (happy, sad, tired, stressed, energetic, chill): ").lower().strip()
@@ -7,7 +8,7 @@ def get_mood():
         else:
             return mood
 
-
+# Recommends songs based on the user's mood
 def recommend_song(mood):
     songs = {
         "happy": ["Happy - Pharrell", "Good as Hell - Lizzo"],
@@ -26,7 +27,7 @@ def recommend_song(mood):
      print("\nNo recommendations for that mood yet.")
     
 
-    
+   # Main program loop that runs the app
 def main():
     print("Welcome William Heard! List any mood to get music recommendations.\n")
     
