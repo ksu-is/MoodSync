@@ -1,9 +1,9 @@
 def get_mood():
     while True:
-        mood = input("How are you feeling? ").lower().strip()
-        
-        if mood == "":
-            print("Please enter a mood.")
+        mood = input("Enter your mood (happy, sad, tired, stressed, energetic, chill): ").lower().strip()
+
+        if mood == "" or not mood.isalpha():
+            print("Please enter a valid mood.")
         else:
             return mood
 
@@ -19,13 +19,14 @@ def recommend_song(mood):
     }
 
     if mood in songs:
-        print("\nRecommended songs:")
+        print("\n--- Recommended Songs ---")
         for song in songs[mood]:
             print("-", song)
     else:
         print("\nNo recommendations for that mood yet.")
+    
 
-
+    
 def main():
     print("Welcome William Heard! List any mood to get music recommendations.\n")
     
