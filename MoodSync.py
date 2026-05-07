@@ -4,10 +4,11 @@ import random
 
 def get_mood():
     while True:
-        mood = input("Enter your mood (happy, sad, tired, stressed, energetic, chill): ").lower().strip()
+        mood = input("Enter your mood (happy, sad, tired, stressed, energetic, chill, angry, relaxed, motivated, focused): ").lower().strip()
 
         if mood == "" or not mood.isalpha():
             print("Please enter a valid mood.")
+            print("Try one of these: happy, sad, tired, stressed, energetic, chill, angry, relaxed, motivated, focused")
         else:
             return mood
 
