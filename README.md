@@ -12,3 +12,9 @@ The user enters how they feel, and the program suggests songs that match that mo
 
 ## Technologies
 - Python
+
+## New Features (Sprint 3)
+- Expanded mood categories
+- Random "Featured Pick" song
+- Improved user prompts and validation
+- Emoji-enhanced output
