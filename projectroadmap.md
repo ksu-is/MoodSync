@@ -24,3 +24,9 @@ I explored a Python recommendation system project on GitHub. The project used li
 - [x] Improved input validation
 - [x] Added new mood categories
 - [x] Improved output formatting
+
+## Sprint 3 Progress
+- Added new moods (angry, relaxed, motivated, focused)
+- Improved user input validation
+- Added featured song recommendation
+- Enhanced output formatting with emojis
