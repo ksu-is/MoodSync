@@ -42,12 +42,14 @@ def recommend_song(mood):
 
    # Main program loop that runs the app
 def main():
-    print("Welcome William Heard! List any mood to get music recommendations.\n")
+    print("🎧 Welcome William Heard! Let's find your vibe 🎶\n")
     
     while True:
         mood = get_mood()
         recommend_song(mood)
-        
+
+        print("\n✨ Enjoy your music! ✨")
+
         again = input("\nTry again? (yes/no): ").lower()
         if again != "yes":
             print("Goodbye!")
