@@ -1,4 +1,7 @@
 # Gets user mood input and makes sure it's valid
+import random
+
+
 def get_mood():
     while True:
         mood = input("Enter your mood (happy, sad, tired, stressed, energetic, chill): ").lower().strip()
@@ -17,15 +20,23 @@ def recommend_song(mood):
         "tired": ["Chill Vibes", "Soft Piano"],
         "energetic": ["Stronger - Kanye West", "POWER - Kanye West"],
         "chill": ["Location - Khalid", "Pink + White - Frank Ocean"],
-        "angry": ["DNA - Kendrick Lamar", "Lose Yourself - Eminem"]
+        "angry": ["DNA - Kendrick Lamar", "Lose Yourself - Eminem"],
+        "relaxed": ["Best Part - Daniel Caesar", "Sunday Morning - Maroon 5"],
+        "motivated": ["HUMBLE - Kendrick Lamar", "Can't Hold Us - Macklemore"],
+        "focused": ["Deep Focus - Spotify", "Instrumental Study Beats"]
     }
 
     if mood in songs:
-       print("\n🎵 --- Recommended Songs --- 🎵")
-       for song in songs[mood]:
-        print("-", song)
+        print("\n🎵 --- Recommended Songs --- 🎵")
+
+        for song in songs[mood]:
+            print("-", song)
+
+        print("\n🔥 Featured Pick:")
+        print("-", random.choice(songs[mood]))
+
     else:
-     print("\nNo recommendations for that mood yet.")
+        print("\nNo recommendations for that mood yet.") 
     
 
    # Main program loop that runs the app
